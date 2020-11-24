@@ -60,6 +60,17 @@ logsources:
       source_name:
         - "Microsoft-Windows-Security-Auditing"
         - "Microsoft-Windows-Eventlog"
+  winrdp:
+   product: windows
+   conditions:
+     source_name:
+        - "Microsoft-Windows-TerminalServices-LocalSessionManager"  
+  windows-defender:
+    product: windows
+    service: windefend
+    conditions:
+      source_name: 
+        - "Microsoft-Windows-Windows-Defender"
   powershell:
     service: powershell
     conditions:
